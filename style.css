@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+@media(min-width:1200px){
+    .container{
+        max-width: 1200px;
+    }
+}
+
+.container{
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    margin-top: 50px;
+    padding: 50px 100px;
+    border: 1px solid  rgba(128, 128, 128, 0.3);
+    background-color: rgba(128, 128, 128, 0.1);
+    width: 60%;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.input-container{
+    margin-bottom: 30px;
+    display: flex;
+}
+.input-container>input{
+    flex-basis: 80%;
+    border: 1px solid green;
+    border-right: none;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    margin-right: 0;
+}
+.feedback{
+    margin-top: -15px;
+    margin-bottom: 20px;
+    display: none;
+    justify-content: center;
+}
+
+.feedback>p{
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: rgba(255, 192, 203, 0.658);
+    padding: 10px;
+}
+.task-list{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 5px 10px 5px 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+    transition: all 0.2s;
+}
+
+.taskName{
+    margin: auto 0;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    background-color:inherit;
+    outline: none;
+    text-decoration: none;
+    width: 100%;
+}
+.icons{
+    display: flex;
+    align-content: center;
+    margin-left: auto;
+}
+.taskBtn{
+    margin: auto 0;
+    margin-left: 10px;
+    width: 15px;
+    cursor: pointer;
+    opacity: 0.75;
+    transition: all 0.15s;
+}
+.taskBtn:hover{
+    opacity: 1;
+    font-size: 19px;
+}
+#taskDone{
+    color: green;
+}
+#taskEdit{
+    color: rgb(78, 165, 219);
+}
+#taskRemove{
+    color: red;
+}
+.btn{
+    border: 1px solid green;
+    border-radius: 7px;
+    color: green;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s;
+}
+.btn:hover{
+    background-color: rgba(0, 128, 0, 0.13);
+}
+.add{
+    flex-basis: 20%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 10px;
+    margin: auto 0;
+}
+.clear-container{
+    margin-top: 50px;
+    text-align: center;
+}
+.clearAll{
+    padding: 12px 20px;
+}
+.save{
+    display: none; /* display: inline-block; */
+    padding: 5px 30px;
+    color: rgb(230, 141, 141);
+    border-color: rgb(230, 141, 141);
+    margin-bottom: 15px;
+}
+.save:hover{
+    background-color: rgba(230, 141, 141, 0.308);
+}
